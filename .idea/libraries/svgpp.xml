@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="svgpp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/svgpp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

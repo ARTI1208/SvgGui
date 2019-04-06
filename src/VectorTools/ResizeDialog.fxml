@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="VectorTools.ResizeDialog"
+          hgap="5" vgap="10"
+            prefHeight="100.0" prefWidth="200.0">
+    <Label text="Height (%)" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label text="Width (%)" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+    <TextField id="height" text="100" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField id="width" text="100" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+</GridPane>

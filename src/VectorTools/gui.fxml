@@ -1,0 +1,43 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+<VBox fx:controller="VectorTools.Controller" xmlns:fx="http://javafx.com/fxml">
+    <MenuBar id="menu">
+        <Menu id="image" text="Image" >
+            <MenuItem id="resize" text="Resize"/>
+        </Menu>
+    </MenuBar>
+<GridPane id="grid" hgap="10" vgap="10">
+    <padding>
+        <Insets topRightBottomLeft="10"/>
+    </padding>
+
+    <Label text="Image type:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <RadioButton selected="true" text="Android Vector" id="android" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <RadioButton text="SVG" id="svg" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+    <Label text="Mode:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <RadioButton selected="true" text="Make relative" id="relative" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <RadioButton text="make Absolute" id="absolute" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <RadioButton text="Convert to SVG" id="convert" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="7" alignment="CENTER_LEFT">
+        <Label text="Input:"/>
+        <Button id="in_paste" text="Paste"/>
+        <Button id="input_info" text="Info"/>
+    </HBox>
+
+    <HBox spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="7" alignment="CENTER_LEFT">
+        <Label text="Output:"/>
+        <Button id="out_copy" text="Copy"/>
+        <Button id="output_info" text="Info"/>
+    </HBox>
+
+    <TextArea prefHeight="400" id="inputArea" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+    <TextArea prefHeight="400" id="outputArea" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+
+    <WebView prefHeight="400" id="webInput" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+    <WebView prefHeight="400" id="webOutput" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+</GridPane>
+</VBox>
